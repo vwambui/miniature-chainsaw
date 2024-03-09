@@ -1,0 +1,241 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  border: 1px solid rgba(95, 99, 104, 0.3);
+  border-radius: 8px;
+  padding: 48px 38px 36px;
+  margin-top: 3rem;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 550px;
+  overflow: hidden;
+}
+
+.email-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.6s ease;
+  transform: translateX(500px);
+  position: absolute;
+}
+
+.name-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10%;
+  width: 81%;
+  transition: 0.6s ease;
+}
+
+/* PASSWORD STYLING */
+.password-card {
+  position: absolute;
+  width: 100%;
+  transform: translateX(1000px);
+  text-align: center;
+  transition: 0.6s ease;
+  top: 7%;
+}
+
+.verification-card {
+  position: absolute;
+  width: 100%;
+  transform: translateX(1500px);
+  text-align: center;
+  transition: 0.6s ease;
+  top: 7%;
+}
+
+.images-container {
+  margin-bottom: 2.5rem;
+}
+
+.images-container img {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.checkbox-container {
+  text-align: left;
+}
+.checkbox-container label {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  cursor: pointer;
+}
+
+.emailValue {
+  border: 1px solid rgba(95, 99, 104, 0.5);
+  display: inline-block;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-size: 11px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.password-input-container {
+  margin-top: 2rem;
+}
+
+.move-left1 {
+  transform: translateX(-500px);
+}
+.move-left2 {
+  transform: translateX(-1000px);
+}
+.move-left3 {
+  transform: translateX(-1500px);
+}
+.sign-in {
+  margin: 20px 0 10px 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input-container label {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+  color: rgba(95, 99, 104, 0.8);
+  pointer-events: none;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  transition: border 5ms ease-in-out;
+  border: 1px solid rgba(95, 99, 104, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.wldpass:focus {
+  outline: none;
+  border: 2px solid #10d767;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(26, 115, 232);
+  border-radius: 4px;
+}
+
+.input-container .wldpass:focus ~ label,
+.input-container .wldpass:valid ~ label {
+  top: -8px;
+  left: 12px;
+  font-size: 13px;
+  color: #10d767;
+  padding: 0 6px;
+}
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+  top: -8px;
+  left: 12px;
+  font-size: 13px;
+  color: rgb(26, 115, 232);
+  padding: 0 6px;
+}
+
+.guest-mode {
+  margin-top: 2.5rem;
+  color: rgba(95, 99, 104, 0.8);
+  line-height: 1.4;
+  font-size: 17px;
+  width: 100%;
+}
+
+a {
+  color: rgb(26, 115, 232);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+.name-buttons {
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.btn {
+  background-color: rgb(26, 115, 232);
+  border: 2px solid rgb(26, 115, 232);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.nextBtn4 {
+  background-color: #10d767;
+  border: 2px solid #10d767;
+}
+
+.buttons a {
+  position: relative;
+  align-self: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.wldverify-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 580px) {
+  .container {
+    margin-top: 1rem;
+    border: none;
+  }
+}
